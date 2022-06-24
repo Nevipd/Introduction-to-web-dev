@@ -1,0 +1,83 @@
+<!-- this is the main page and it is addressed as index.html
+i couldnt align the image because that can only be done using css in html5
+Styling tags were my option to in line styling for neatness 
+i used div tags for easier customization of page contents
+this page has a link to the hobbies page as well as the mail client
+
+1900712481      
+19/U/12481/PS
+neema david pontiano
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        #pic1{
+            width: 150px;
+            height: 200px;
+
+        }
+        textarea,input{
+            width: 100%;
+            padding: 4px;
+            border: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        input,textarea{
+            background-color: aliceblue;
+        }
+        
+        *{
+            background-color: cornsilk;
+        }
+        .forms1{
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="imd1">
+        <img id="pic1" src="./mepic.jpg" alt="my human appearance">
+    </div>
+    <div>
+        
+        <h2>About Me</h2>
+         Name: Neema David Pontiano <br>
+         Age: 22 <br>
+         Status: Peaceful 
+         <p style="letter-spacing: 0.5mm;">Born raised and still living in Uganda, i really hope to leave alive someday and maybe witness a new regime from overseas</p>
+
+    </div>
+        <p></p>
+    
+        <h4><a href="./hobby.html">Find my hobbies here</a></h4>
+        <h2>Contact</h2>
+        <div class="forms1">
+        <form id="cont1" action="action_page.php" method="post">
+            <fieldset>
+                <label for="name1">Full name</label>
+                <input id="name1" placeholder="Enter full name" type="text" required><br>
+            
+                <label for="mail1">Email Address</label>
+
+                <input id="mail1" placeholder="Enter your Email Address" type="email">
+                <br>
+                <label for="text1" aria-placeholder="enter message here"> Your message</label>
+                <textarea id="text1" placeholder="Type your Message" required></textarea>
+                <br>
+                <button name="submit" type="submit">
+                    <a href="mailto:marvinlyazi30@gmail.com">Submit</a>
+                </button>
+            </fieldset>
+        </form>
+        </div>
+
+</body>
+</html>
